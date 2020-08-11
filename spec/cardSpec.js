@@ -5,9 +5,8 @@ describe("Card", function() {
   // });
 
   describe("#correctAnswer", function() {
-    card = new Card('red', 'red', 'blue')
-
-    it("returns correct answer", function() {
+    it("returns red if textColour matches text", function() {
+      card = new Card('red', 'red', 'blue')
       expect(card.correctAnswer()).toEqual('red')
     });
   });
