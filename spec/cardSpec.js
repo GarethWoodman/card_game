@@ -29,5 +29,10 @@ describe("Card", function() {
       card = new Card('duck', 'black', 'green')
       expect(card.correctAnswer()).toEqual('green')
     });
+
+    it("returns goose if text is goose", function() {
+      card = new Card('goose', 'blue', 'green')
+      expect(card.correctAnswer()).toEqual('goose')
+    });
   });
 });
