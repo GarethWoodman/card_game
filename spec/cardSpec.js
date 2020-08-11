@@ -24,5 +24,10 @@ describe("Card", function() {
       card = new Card('duck', 'red', 'green')
       expect(card.correctAnswer()).toEqual('red')
     });
+
+    it("returns green as you can't say duck and text is black", function() {
+      card = new Card('duck', 'black', 'green')
+      expect(card.correctAnswer()).toEqual('green')
+    });
   });
 });
