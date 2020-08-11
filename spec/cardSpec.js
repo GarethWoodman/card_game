@@ -19,5 +19,10 @@ describe("Card", function() {
       card = new Card('chicken', 'black', 'blue')
       expect(card.correctAnswer()).toEqual('chicken')
     });
+
+    it("returns red as you can't say duck", function() {
+      card = new Card('duck', 'red', 'green')
+      expect(card.correctAnswer()).toEqual('red')
+    });
   });
 });

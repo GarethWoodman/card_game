@@ -6,6 +6,9 @@ class Card {
   }
 
   correctAnswer() {
+    if(this.text == 'duck'){
+      return this.textColour
+    }
     if(!CardProperty.colours().includes(this.text)){
       return this.text
     }
