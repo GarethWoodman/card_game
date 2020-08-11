@@ -41,3 +41,6 @@ As a player
 So that I have an incentive to try again
 I want to be able to lose
 ```
+
+## MVC Mockup
+![MVC Mockup](./resources/mvc_concept_01.png)
