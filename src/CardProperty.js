@@ -1,6 +1,6 @@
 class CardProperty {
 
-  static texts() {
+  static colours() {
     return ['red', 'green', 'blue']
   };
 

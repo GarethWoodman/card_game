@@ -9,5 +9,15 @@ describe("Card", function() {
       card = new Card('red', 'red', 'blue')
       expect(card.correctAnswer()).toEqual('red')
     });
+
+    it("returns blue if textColour is black", function() {
+      card = new Card('red', 'black', 'blue')
+      expect(card.correctAnswer()).toEqual('blue')
+    });
+
+    it("returns chicken as it is not a colour", function() {
+      card = new Card('chicken', 'black', 'blue')
+      expect(card.correctAnswer()).toEqual('chicken')
+    });
   });
 });
