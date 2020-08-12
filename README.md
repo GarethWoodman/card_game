@@ -1,4 +1,4 @@
-# Unittled Card Game
+# Untitled Card Game
 A confusingly simple card game! 
 
 ## Rules
